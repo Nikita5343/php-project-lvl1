@@ -1,18 +1,19 @@
 {
     "name": "hexlet/code",
-    "autoload": {
-        "psr-4": {
-            "Hexlet\\Code\\": "src/"
-        }
-    },
+    "bin": ["bin/brain-games"],
+    "type": "library",
+    "description": "my first project",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nikita Voitov",
             "email": "pochta5343@mail.ru"
         }
     ],
-    "bin" : [
-        "bin/brain-games"
-    ],
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
     "require": {}
 }
