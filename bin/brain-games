@@ -1,3 +1,9 @@
 #!/usr/bin/env php
+<?php
 
-Welcome to the Brain Games!
+
+use function Brain\Games\Cli\welcome;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+welcome();
