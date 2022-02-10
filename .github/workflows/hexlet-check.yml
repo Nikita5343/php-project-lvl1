@@ -33,10 +33,10 @@ or your requiements.yml file.
     
     
     
-name: php-project-lvl1
-on: push
-jobs:
-  my-job:
+    name: php-project-lvl1
+    on: push
+    jobs:
+    my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
