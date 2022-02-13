@@ -1,8 +1,8 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/brain-games.php",
-        "bin/brain-even.php"
+        "bin/brain-games",
+        "bin/brain-even"
     ],
     "type": "library",
     "description": "my first project",
@@ -18,7 +18,8 @@
             "Hexlet\\Code\\": "src/"
         },
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/name.php"
         ]
     },
     "require": {

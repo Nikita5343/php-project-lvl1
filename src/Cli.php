@@ -7,7 +7,7 @@ use function Cli\prompt;
 
 function welcome()
 {
-    line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    line("Hello %s!", $name);
+    line('Добро пожаловать в интеллектуальную игру!');
+    $name = prompt('Можно узнать ваше имя?');
+    line("Здравствуйте %s!", $name);
 }
