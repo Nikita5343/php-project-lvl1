@@ -4,5 +4,8 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup PHP
+      - name: Install
+        run: make install
       - name: my-step
         run: make lint
