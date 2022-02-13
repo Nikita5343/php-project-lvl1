@@ -3,19 +3,5 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="asciinema-player.css" />
-</head>
-<body>
-  <div id="player"></div>
-  <script src="asciinema-player.min.js"></script>
-  <script>
-    AsciinemaPlayer.create(
-      '468797.cast',
-      document.getElementById('player'),
-      { cols: 80, rows: 24 }
-    );
-  </script>
-</body>
-</html>
+game brain-even :
+https://asciinema.org/a/IiSekE3qACjUa8dmNzE3u7RMq
