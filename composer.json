@@ -1,8 +1,8 @@
 {
     "name": "hexlet/code",
     "bin": [
-        "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-games.php",
+        "bin/brain-even.php"
     ],
     "type": "library",
     "description": "my first project",
@@ -17,7 +17,9 @@
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         },
-        "files": ["src/Cli.php"]
+        "files": [
+            "src/Cli.php"
+        ]
     },
     "require": {
         "wp-cli/php-cli-tools": "^0.11.13"

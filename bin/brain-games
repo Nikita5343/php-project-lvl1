@@ -1,9 +1,0 @@
-#!/usr/bin/env php
-<?php
-
-
-use function Brain\Games\Cli\welcome;
-
-require_once __DIR__ . '/../vendor/autoload.php';
-
-welcome();
