@@ -27,7 +27,7 @@ function game()
         $randnumber = rand(1, 100);
         $question = prompt("Ваш ответ: $randnumber");
         $correctAnswer = isEven($randnumber);
-        $engine = engine($question , $correctAnswer);
+        $engine = engine($question, $correctAnswer);
         if ($engine) {
             $result = "Правильно! Поздравляем вас $name , Вы прошли игру)";
         } else {

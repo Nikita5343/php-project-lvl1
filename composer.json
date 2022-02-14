@@ -2,7 +2,8 @@
     "name": "hexlet/code",
     "bin": [
         "bin/brain-games",
-        "bin/brain-even"
+        "bin/brain-even",
+        "bin/brain-calc"
     ],
     "type": "library",
     "description": "my first project",
@@ -21,7 +22,8 @@
             "src/Cli.php",
             "src/name.php",
             "src/general.php",
-            "src/brain-even.php"
+            "src/brain-even.php",
+            "src/brain-calc.php"
         ]
     },
     "require": {
