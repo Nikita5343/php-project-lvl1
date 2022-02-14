@@ -20,10 +20,10 @@
         },
         "files": [
             "src/Cli.php",
-            "src/name.php",
-            "src/general.php",
-            "src/brain-even.php",
-            "src/brain-calc.php"
+            "src/Games/name.php",
+            "src/Engine.php",
+            "src/Games/brain-even.php",
+            "src/Games/brain-calc.php"
         ]
     },
     "require": {
