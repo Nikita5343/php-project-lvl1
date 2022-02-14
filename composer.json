@@ -4,7 +4,8 @@
         "bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gcd"
+        "bin/brain-gcd",
+        "bin/brain-progression"
     ],
     "type": "library",
     "description": "my first project",
@@ -25,7 +26,8 @@
             "src/Engine.php",
             "src/Games/brain-even.php",
             "src/Games/brain-calc.php",
-            "src/Games/brain-gcd.php"
+            "src/Games/brain-gcd.php",
+            "src/Games/brain-progression.php"
         ]
     },
     "require": {
