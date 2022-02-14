@@ -34,7 +34,7 @@ function game(): void
     $result = '';
     line("Ответьте «да», если данное число простое. В противном случае ответьте «нет».");
     for ($i = 0; $i < COUNT; $i++) {
-        $num = rand(7, 11);
+        $num = rand(7, 21);
         $question = prompt("$num");
         $correctAnswer = danet($num);
         $engine = engine($question, $correctAnswer);
