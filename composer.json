@@ -3,7 +3,8 @@
     "bin": [
         "bin/brain-games",
         "bin/brain-even",
-        "bin/brain-calc"
+        "bin/brain-calc",
+        "bin/brain-gcd"
     ],
     "type": "library",
     "description": "my first project",
@@ -20,10 +21,11 @@
         },
         "files": [
             "src/Cli.php",
-            "src/Games/name.php",
+            "src/Games/brain-games.php",
             "src/Engine.php",
             "src/Games/brain-even.php",
-            "src/Games/brain-calc.php"
+            "src/Games/brain-calc.php",
+            "src/Games/brain-gcd.php"
         ]
     },
     "require": {
