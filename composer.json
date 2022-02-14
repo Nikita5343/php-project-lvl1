@@ -19,7 +19,9 @@
         },
         "files": [
             "src/Cli.php",
-            "src/name.php"
+            "src/name.php",
+            "src/general.php",
+            "src/brain-even.php"
         ]
     },
     "require": {

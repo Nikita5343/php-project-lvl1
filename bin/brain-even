@@ -8,50 +8,7 @@ if (file_exists($part1)) {
 } else {
     require_once $part2;
 }
-use function Brain\Games\Cli\Name\welcome;
-use function cli\line as line;
-use function cli\prompt as prompt;
 
-const COUNT = 3;
-
-function isEven($randnumber)
-{
-    if($randnumber % 2 === 0) {
-        return 'да';
-    }else {
-        return 'нет';
-    }
-}
-
-function engine(string $question, string $correctAnswer):bool
-{
-    if ($question === $correctAnswer) {
-        line('Правильно!');
-        return true;
-    } else {
-        //line(" '$question' Неправильный ответ, правильный ответ => $correctAnswer");
-        return false;
-    }
-}
-
-function game()
-{
-    $result = '';
-    $name = welcome();
-    line("Ответьте «да», если число четное, иначе ответьте «нет».");
-    for ($i = 0;$i < COUNT;$i++) {
-        $randnumber = rand(1, 100);
-        $question = prompt("Ваш ответ: {$randnumber}");
-        $correctAnswer = isEven($randnumber);
-        $engine = engine($question , $correctAnswer);
-        if ($engine) {
-            $result = "Правильно! Поздравляем вас {$name} , Вы прошли игру)";
-        } else {
-            $result = " '{$question}' Неправильный ответ, правильный ответ => '{$correctAnswer}'  Давайте попробуем еще раз, {$name}";
-            break;
-        }
-    }
-    line($result);
-}
+use function Brain\Even\game;
 
 game();
