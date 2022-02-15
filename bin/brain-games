@@ -9,6 +9,6 @@ if (file_exists($part1)) {
     require_once $part2;
 }
 
-use function Brain\Games\welcome;
+use function Brain\Games\Cli\welcome;
 
 welcome();
