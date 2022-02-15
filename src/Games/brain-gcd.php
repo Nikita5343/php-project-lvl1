@@ -21,17 +21,17 @@ function game()
 {
     $result = '';
     $name = welcome();
-    line("Найдите наибольший общий делитель данных чисел.");
+    line("Find the greatest common divisor of given numbers.");
     for ($i = 0; $i < COUNT; $i++) {
         $rand1 = rand(1, 50);
         $rand2 = rand(50, 200);
-        $question = prompt("$rand1 $rand2");
+        $question = prompt("Question $rand1 $rand2");
         $correctAnswer = gmp_gcd($rand1, $rand2);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
-            $result = "Правильно! Поздравляем вас $name , Вы прошли игру)";
+            $result = "Congratulations, $name!";
         } else {
-            $result = "Давайте попробуем ещё раз, $name";
+            $result = "Let's try again, $name!";
             break;
         }
     }

@@ -29,19 +29,19 @@ function game()
 {
     $name = welcome();
     $result = '';
-    line("Что является результатом выражения?");
+    line("What is the result of the expression?");
     for ($i = 0; $i < COUNT; $i++) {
         if ($i === 0) {
             $rand1 = rand(0, 50);
             $rand2 = rand(0, 50);
-            $question = prompt("Question: $rand1 + $rand2");
+            $question = prompt("Question $rand1 + $rand2");
             $summa = $rand1 + $rand2;
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
             if ($engine) {
-                $result = "Правильно! Поздравляем вас $name , Вы прошли игру";
+                $result = "Congratulations, $name!";
             } else {
-                $result = "Давай попробуем еще раз, $name";
+                $result = "Let's try again, $name!";
                     break;
             }
         }
@@ -53,9 +53,9 @@ function game()
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
             if ($engine) {
-                $result = "Правильно! Поздравляем вас $name , Вы прошли игру";
+                $result = "Congratulations, $name!";
             } else {
-                $result = "Давай попробуем еще раз, $name";
+                $result = "Let's try again, $name!";
                 break;
             }
         }
@@ -67,9 +67,9 @@ function game()
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
             if ($engine) {
-                $result = "Правильно! Поздравляем вас $name , Вы прошли игру";
+                $result = "Congratulations, $name!";
             } else {
-                $result = "Давай попробуем еще раз, $name";
+                $result = "Let's try again, $name!";
                 break;
             }
         }

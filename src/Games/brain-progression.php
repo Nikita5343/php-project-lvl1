@@ -19,20 +19,20 @@ function game()
 {
     $result = '';
     $name = welcome();
-    line("Какое число пропущено в прогрессии?");
+    line("What number is missing in the progression?");
     for ($i = 0; $i < COUNT; $i++) {
         $randprogress = rand(2, 7);
         $progress = range(1, 100, $randprogress);
         $randsecret = rand(0, count($progress));
         $secret = $progress[$randsecret];
-        $progress[$randsecret] = "..secret";
+        $progress[$randsecret] = "..";
         $implode = implode(" ", $progress);
-        $question = prompt("$implode");
+        $question = prompt("Question $implode");
         $engine = engine($question, $secret);
         if ($engine) {
-            $result = "Правильно! Поздравляем вас $name , Вы прошли игру)";
+            $result = "Congratulations, $name!";
         } else {
-            $result = "Давайте попробуем ещё раз, $name";
+            $result = "Let's try again, $name!";
             break;
         }
     }

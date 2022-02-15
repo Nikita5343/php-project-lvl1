@@ -24,7 +24,7 @@ function prostoe($num): bool
 
 function danet($num)
 {
-    $text = prostoe($num) ? 'да' : 'нет';
+    $text = prostoe($num) ? 'yes' : 'no';
     return $text;
 }
 
@@ -32,16 +32,16 @@ function game(): void
 {
     $name = welcome();
     $result = '';
-    line("Ответьте «да», если данное число простое. В противном случае ответьте «нет».");
+    line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 0; $i < COUNT; $i++) {
         $num = rand(7, 21);
-        $question = prompt("$num");
+        $question = prompt("Question $num");
         $correctAnswer = danet($num);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
-            $result = "Правильно! Поздравляем вас $name , Вы прошли игру)";
+            $result = "Congratulations, $name!";
         } else {
-            $result = "Давайте попробуем ещё раз, $name";
+            $result = "Let's try again, $name!";
             break;
         }
     }

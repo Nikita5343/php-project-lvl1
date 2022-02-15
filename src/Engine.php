@@ -7,10 +7,10 @@ use function cli\line;
 function engine(string $question, string $correctAnswer): bool
 {
     if ($question === $correctAnswer) {
-        line('Правильно!');
+        line('Correct!');
         return true;
     } else {
-        line(" '$question' Неправильный ответ, правильный ответ => $correctAnswer");
+        line("'$question' is wrong answer ;(. Correct answer was '$correctAnswer'.");
         return false;
     }
 }

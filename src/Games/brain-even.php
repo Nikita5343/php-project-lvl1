@@ -12,9 +12,9 @@ const COUNT = 3;
 function isEven($randnumber)
 {
     if ($randnumber % 2 === 0) {
-        return 'да';
+        return 'yes';
     } else {
-        return 'нет';
+        return 'no';
     }
 }
 
@@ -22,16 +22,16 @@ function game()
 {
     $result = '';
     $name = welcome();
-    line("Ответьте «да», если число четное, иначе ответьте «нет».");
+    line('Answer "yes" if the number is even, otherwise answer "no".');
     for ($i = 0; $i < COUNT; $i++) {
         $randnumber = rand(1, 100);
-        $question = prompt("Ваш ответ: $randnumber");
+        $question = prompt("Question $randnumber");
         $correctAnswer = isEven($randnumber);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
-            $result = "Правильно! Поздравляем вас $name , Вы прошли игру)";
+            $result = "Congratulations, $name!";
         } else {
-            $result = "Давай попробуем еще раз, $name";
+            $result = "Let's try again, $name!";
             break;
         }
     }
