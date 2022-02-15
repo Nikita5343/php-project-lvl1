@@ -2,7 +2,7 @@
 
 namespace Brain\Games\GCD;
 
-use function Brain\Games\welcome;
+use function Brain\Games\Cli\welcome;
 use function Brain\general\engine;
 use function cli\line;
 use function cli\prompt;

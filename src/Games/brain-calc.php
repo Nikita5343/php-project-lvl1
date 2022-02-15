@@ -3,7 +3,7 @@
 namespace Brain\Calc;
 
 use function Brain\general\engine;
-use function Brain\Games\welcome;
+use function Brain\Games\Cli\welcome;
 use function cli\line;
 use function cli\prompt;
 
