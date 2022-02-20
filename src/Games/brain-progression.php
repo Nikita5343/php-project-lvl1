@@ -21,13 +21,13 @@ function game()
     $name = welcome();
     line("What number is missing in the progression?");
     for ($i = 0; $i < COUNT; $i++) {
-        $randprogress = rand(2, 5);
+        $randprogress = rand(1, 4);
         $progress = range(1, 50, $randprogress);
         $randsecret = rand(0, count($progress));
         $secret = $progress[$randsecret];
         $progress[$randsecret] = "..";
         $implode = implode(" ", $progress);
-        line("Question $implode");
+        line("Question: $implode");
         $question = prompt("Your answer");
         $engine = engine($question, $secret);
         if ($engine) {
