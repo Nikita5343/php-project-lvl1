@@ -21,4 +21,4 @@ Brain-progression : https://asciinema.org/a/pjVLylGut8DB09WGyUQQmJAgs
 
 Brain-gcd : https://asciinema.org/a/h1nSRRHX6bVaogBGyWRF6O0Ga
 
-Brain-prime : https://asciinema.org/a/vEzp17plwkn2dOHpI1HeIh7Mv
+Brain-priime : https://asciinema.org/a/vEzp17plwkn2dOHpI1HeIh7Mv
