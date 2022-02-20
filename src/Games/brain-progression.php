@@ -29,7 +29,7 @@ function game()
         $implode = implode(" ", $progress);
         line("Question: $implode");
         $question = prompt("Your answer");
-        $engine = engine((string) $question, (string) $secret);
+        $engine = engine($question, (string) $secret);
         if ($engine) {
             $result = "Congratulations, $name!";
         } else {
