@@ -38,7 +38,7 @@ function game()
             $question = prompt("Your answer");
             $summa = $rand1 + $rand2;
             $correctAnswer = $summa;
-            $engine = engine($question, $correctAnswer);
+            $engine = engine($question, (string) $correctAnswer);
             if ($engine) {
                 $result = "Congratulations, $name!";
             } else {
@@ -53,7 +53,7 @@ function game()
             $question = prompt("Your answer");
             $summa = $rand1 - $rand2;
             $correctAnswer = $summa;
-            $engine = engine($question, $correctAnswer);
+            $engine = engine($question, (string) $correctAnswer);
             if ($engine) {
                 $result = "Congratulations, $name!";
             } else {
@@ -68,7 +68,7 @@ function game()
             $question = prompt("Your answer");
             $summa = $rand1 * $rand2;
             $correctAnswer = $summa;
-            $engine = engine($question, $correctAnswer);
+            $engine = engine($question, (string) $correctAnswer);
             if ($engine) {
                 $result = "Congratulations, $name!";
             } else {
