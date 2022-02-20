@@ -35,7 +35,8 @@ function game(): void
     line('Answer "yes" if given number is prime. Otherwise answer "no".');
     for ($i = 0; $i < COUNT; $i++) {
         $num = rand(7, 21);
-        $question = prompt("Question $num");
+        line("Question: $num");
+        $question = prompt("Your answer");
         $correctAnswer = danet($num);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
