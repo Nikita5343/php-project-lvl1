@@ -2,7 +2,7 @@
 
 namespace Brain\Progression;
 
-use function brain\general\engine;
+use function brain\General\engine;
 use function Brain\Games\Cli\welcome;
 use function cli\line;
 use function cli\prompt;
