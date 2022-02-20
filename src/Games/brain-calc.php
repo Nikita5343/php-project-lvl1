@@ -34,7 +34,8 @@ function game()
         if ($i === 0) {
             $rand1 = rand(0, 50);
             $rand2 = rand(0, 50);
-            $question = prompt("Question $rand1 + $rand2");
+            line("Question: $rand1 + $rand2");
+            $question = prompt("Your answer");
             $summa = $rand1 + $rand2;
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
@@ -48,7 +49,8 @@ function game()
         if ($i === 1) {
             $rand1 = rand(50, 100);
             $rand2 = rand(0, 50);
-            $question = prompt("Question: $rand1 - $rand2");
+            line("Question: $rand1 - $rand2");
+            $question = prompt("Your answer");
             $summa = $rand1 - $rand2;
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
@@ -62,7 +64,8 @@ function game()
         if ($i === 2) {
             $rand1 = rand(1, 10);
             $rand2 = rand(1, 10);
-            $question = prompt("Question: $rand1 * $rand2");
+            line("Question: $rand1 * $rand2");
+            $question = prompt("Your answer");
             $summa = $rand1 * $rand2;
             $correctAnswer = $summa;
             $engine = engine($question, $correctAnswer);
