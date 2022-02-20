@@ -21,8 +21,8 @@ function game()
     $name = welcome();
     line("What number is missing in the progression?");
     for ($i = 0; $i < COUNT; $i++) {
-        $randprogress = rand(2, 7);
-        $progress = range(1, 100, $randprogress);
+        $randprogress = rand(2, 5);
+        $progress = range(1, 30, $randprogress);
         $randsecret = rand(0, count($progress));
         $secret = $progress[$randsecret];
         $progress[$randsecret] = "..";
