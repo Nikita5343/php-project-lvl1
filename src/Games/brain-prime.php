@@ -22,7 +22,7 @@ function prostoe(int $num): bool
     return true;
 }
 
-function danet($num): string
+function danet(int $num): string
 {
     $text = prostoe($num) ? 'yes' : 'no';
     return $text;

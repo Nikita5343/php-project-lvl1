@@ -2,7 +2,7 @@
 
 namespace Brain\Progression;
 
-use function brain\General\engine;
+use function Brain\general\engine;
 use function Brain\Games\Cli\welcome;
 use function cli\line;
 use function cli\prompt;
@@ -29,7 +29,7 @@ function game()
         $implode = implode(" ", $progress);
         line("Question: $implode");
         $question = prompt("Your answer");
-        $engine = engine($question, $secret);
+        $engine = engine((string) $question, (string) $secret);
         if ($engine) {
             $result = "Congratulations, $name!";
         } else {
