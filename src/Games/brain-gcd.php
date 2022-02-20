@@ -25,7 +25,8 @@ function game()
     for ($i = 0; $i < COUNT; $i++) {
         $rand1 = rand(1, 50);
         $rand2 = rand(50, 200);
-        $question = prompt("Question $rand1 $rand2");
+        line("Question: $rand1 $rand2");
+        $question = prompt("Your answer");
         $correctAnswer = gmp_gcd($rand1, $rand2);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
