@@ -9,7 +9,7 @@ use function cli\prompt;
 
 const COUNT = 3;
 
-function gcd($rand1, $rand2)
+function gcd(int $rand1, int $rand2)
 {
     for ($i = $rand1, $j = 0; $j < $i; $i--) {
         if ($rand2 % $i === 0 && $rand1 % $i === 0) {
