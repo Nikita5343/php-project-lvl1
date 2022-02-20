@@ -9,7 +9,7 @@ use function cli\prompt;
 
 const COUNT = 3;
 
-function isEven($randnumber): string
+function isEven(int $randnumber): string
 {
     if ($randnumber % 2 === 0) {
         return 'yes';

@@ -9,7 +9,7 @@ use function cli\prompt;
 
 const COUNT = 3;
 
-function prostoe($num): bool
+function prostoe(int $num): bool
 {
     if ($num < 2) {
         return false;
@@ -22,7 +22,7 @@ function prostoe($num): bool
     return true;
 }
 
-function danet($num)
+function danet($num): string
 {
     $text = prostoe($num) ? 'yes' : 'no';
     return $text;
