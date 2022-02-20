@@ -27,7 +27,8 @@ function game()
         $secret = $progress[$randsecret];
         $progress[$randsecret] = "..";
         $implode = implode(" ", $progress);
-        $question = prompt("Question $implode");
+        line("Question $implode");
+        $question = prompt("Your answer");
         $engine = engine($question, $secret);
         if ($engine) {
             $result = "Congratulations, $name!";
