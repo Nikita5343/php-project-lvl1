@@ -9,13 +9,15 @@ use function cli\prompt;
 
 const COUNT = 3;
 
-/*function gcd($summa, $rand1, $rand2)
+function gcd($rand1, $rand2)
 {
-    if ($summa) {
-      return  gmp_gcd($rand1, $rand2);
+    for($i = $rand1, $j = 0; $j < $i; $i--) {
+        if($rand2 % $i === 0 && $rand1 % $i === 0) {
+            return $i;
+        }
     }
 }
-*/
+
 
 function game()
 {
@@ -27,7 +29,7 @@ function game()
         $rand2 = rand(50, 200);
         line("Question: $rand1 $rand2");
         $question = prompt("Your answer");
-        $correctAnswer = gmp_gcd($rand1, $rand2);
+        $correctAnswer = gcd($rand1, $rand2);
         $engine = engine($question, $correctAnswer);
         if ($engine) {
             $result = "Congratulations, $name!";
