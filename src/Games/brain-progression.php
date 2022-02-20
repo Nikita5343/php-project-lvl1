@@ -19,7 +19,7 @@ function game()
 {
     $result = '';
     $name = welcome();
-    line("What number is missing in the progression?");
+    line("What number is missing in this progression?");
     for ($i = 0; $i < COUNT; $i++) {
         $randprogress = rand(2, 5);
         $progress = range(1, 30, $randprogress);
