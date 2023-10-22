@@ -1,0 +1,5 @@
+#!/usr/bin/env php
+<?php
+require_once (__DIR__ . "/../src/Even.php");
+use function BrainGames\even\gameEven;
+gameEven();
